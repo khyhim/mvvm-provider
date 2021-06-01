@@ -1,8 +1,8 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| AppDecorations
 | ----------------------------------------------------------------------     
-|
+| AppDecorations is style for Container Wiget<>
 |
 |
 |
@@ -10,11 +10,11 @@
 
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import 'app_colors.dart';
 
-class MyDecorations {
+class AppDecorations {
   //  Remove default constructor
-  //MyDecorations._internal();
+  AppDecorations._internal();
 
   /*
   *   primary callout Round BoxDecoration
@@ -23,7 +23,7 @@ class MyDecorations {
   static primaryCalloutRound() {
     return BoxDecoration(
         border: Border.all(
-          color: MyColors.bgPrimary(),
+          color: AppColors.bgPrimary(),
         ),
         borderRadius: BorderRadius.all(Radius.circular(20)));
   }
@@ -47,7 +47,7 @@ class MyDecorations {
   static primaryCalloutTop() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgPrimary(),
+      color: AppColors.bgPrimary(),
       border: Border(
         top: BorderSide(
           color: Color(0xFF00733e),
@@ -64,7 +64,7 @@ class MyDecorations {
   static successCalloutTop() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSuccess(),
+      color: AppColors.bgSuccess(),
       border: Border(
         top: BorderSide(
           color: Color(0xFF00733e),
@@ -81,7 +81,7 @@ class MyDecorations {
   static dangerCalloutTop() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgDanger(),
+      color: AppColors.bgDanger(),
       border: Border(
         top: BorderSide(
           color: Color(0xFFc23321),
@@ -98,7 +98,7 @@ class MyDecorations {
   static InfoCalloutTop() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgInfo(),
+      color: AppColors.bgInfo(),
       border: Border(
         top: BorderSide(
           color: Color(0xFF0097bc),
@@ -115,7 +115,7 @@ class MyDecorations {
   static secondaryCalloutTop() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSecondary(),
+      color: AppColors.bgSecondary(),
       border: Border(
         top: BorderSide(
           color: Color(0xFFc87f0a),
@@ -132,7 +132,7 @@ class MyDecorations {
   static primaryCalloutBottom() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgPrimary(),
+      color: AppColors.bgPrimary(),
       border: Border(
         bottom: BorderSide(
           color: Color(0xFF00733e),
@@ -149,7 +149,7 @@ class MyDecorations {
   static successCalloutBottom() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSuccess(),
+      color: AppColors.bgSuccess(),
       border: Border(
         bottom: BorderSide(
           color: Color(0xFF00733e),
@@ -166,7 +166,7 @@ class MyDecorations {
   static dangerCalloutBottom() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgDanger(),
+      color: AppColors.bgDanger(),
       border: Border(
         bottom: BorderSide(
           color: Color(0xFFc23321),
@@ -183,7 +183,7 @@ class MyDecorations {
   static InfoCalloutBottom() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgInfo(),
+      color: AppColors.bgInfo(),
       border: Border(
         bottom: BorderSide(
           color: Color(0xFF0097bc),
@@ -200,7 +200,7 @@ class MyDecorations {
   static secondaryCalloutBottom() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSecondary(),
+      color: AppColors.bgSecondary(),
       border: Border(
         bottom: BorderSide(
           color: Color(0xFFc87f0a),
@@ -217,7 +217,7 @@ class MyDecorations {
   static primaryCalloutLeft() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgPrimary(),
+      color: AppColors.bgPrimary(),
       border: Border(
         left: BorderSide(
           color: Color(0xFF00733e),
@@ -234,7 +234,7 @@ class MyDecorations {
   static successCalloutLeft() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSuccess(),
+      color: AppColors.bgSuccess(),
       border: Border(
         left: BorderSide(
           color: Color(0xFF00733e),
@@ -251,7 +251,7 @@ class MyDecorations {
   static dangerCalloutLeft() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgDanger(),
+      color: AppColors.bgDanger(),
       border: Border(
         left: BorderSide(
           color: Color(0xFFc23321),
@@ -268,7 +268,7 @@ class MyDecorations {
   static InfoCalloutLeft() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgInfo(),
+      color: AppColors.bgInfo(),
       border: Border(
         left: BorderSide(
           color: Color(0xFF0097bc),
@@ -285,7 +285,7 @@ class MyDecorations {
   static secondaryCalloutLeft() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSecondary(),
+      color: AppColors.bgSecondary(),
       border: Border(
         left: BorderSide(
           color: Color(0xFFc87f0a),
@@ -302,7 +302,7 @@ class MyDecorations {
   static primaryCalloutRight() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgPrimary(),
+      color: AppColors.bgPrimary(),
       border: Border(
         right: BorderSide(
           color: Color(0xFF00733e),
@@ -319,7 +319,7 @@ class MyDecorations {
   static successCalloutRight() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSuccess(),
+      color: AppColors.bgSuccess(),
       border: Border(
         right: BorderSide(
           color: Color(0xFF00733e),
@@ -336,7 +336,7 @@ class MyDecorations {
   static dangerCalloutRight() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgDanger(),
+      color: AppColors.bgDanger(),
       border: Border(
         right: BorderSide(
           color: Color(0xFFc23321),
@@ -353,7 +353,7 @@ class MyDecorations {
   static InfoCalloutRight() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgInfo(),
+      color: AppColors.bgInfo(),
       border: Border(
         right: BorderSide(
           color: Color(0xFF0097bc),
@@ -370,7 +370,7 @@ class MyDecorations {
   static secondaryCalloutRight() {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      color: MyColors.bgSecondary(),
+      color: AppColors.bgSecondary(),
       border: Border(
         right: BorderSide(
           color: Color(0xFFc87f0a),

@@ -1,16 +1,16 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| AppDimen
 | ----------------------------------------------------------------------     
-|
+| AppDimen is space in app
 |
 */
 
 import 'package:flutter/material.dart';
 
-class MyDimen {
+class AppDimen {
   //  Remove default constructor
-  //MyDimen._internal();
+  AppDimen._internal();
 
   /*
   *   smaller padding

@@ -4,6 +4,7 @@
 | ----------------------------------------------------------------------     
 |   MultiProvider state management 
 |   PartRoute is running page 
+|
 */
 
 import 'package:connectivity/connectivity.dart';
@@ -16,7 +17,7 @@ import 'package:mvvmprovider/helpers/share_preference.dart';
 import 'package:mvvmprovider/helpers/share_preference_key.dart';
 import 'package:mvvmprovider/routes/route.dart';
 import 'package:provider/provider.dart';
-import 'constants/colors.dart';
+import 'constants/app_colors.dart';
 import 'env.dart';
 
 var navigatorKey = GlobalKey<NavigatorState>();
@@ -29,8 +30,15 @@ void main() async {
   runApp(MultiProvider(
     child: ConfigWrapper(
       child: MyApp(navigatorKey: navigatorKey),
+      /*
+      |----------------------------------------------
+      | configuration is running file env connection api url
+      |----------------------------------------------
+      | @env is name contant in env.dart 
+      |
+      |*/
+
       configuration: env,
-      // configuration: prod_config,
       language: language, // get from share preference
     ),
     providers: [
@@ -43,9 +51,10 @@ void main() async {
 class MyApp extends StatelessWidget {
   /*
   |-------------------------------------------
-  |
+  | MyApp screen running
   |-------------------------------------------
   |This widget is the root of your application.
+  |
   |*/
 
   final navigatorKey;
@@ -60,16 +69,17 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: MyColors.primaryBlack,
-        primaryColor: MyColors.themeColor(),
+        primarySwatch: AppColors.primaryBlack,
+        primaryColor: AppColors.themeColor(),
       ),
       debugShowCheckedModeBanner: false,
       /*
       |------------------------------------------
-      |
+      | home route the first running app
       |------------------------------------------
-      |
-      |
+      | @initialRoute is root of route
+      | @routes is a route connection to file route
+      | @navigatorKey is navigation globle screen connection provider
       |
       */
       //home: Container(),

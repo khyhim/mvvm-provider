@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mvvmprovider/config/config.dart';
 import 'package:mvvmprovider/config/config_wrapper.dart';
-import 'package:mvvmprovider/constants/fonts.dart';
+import 'package:mvvmprovider/constants/app_fonts.dart';
 
 class ComingSoonScreen extends StatefulWidget {
   @override
@@ -30,7 +30,7 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
         centerTitle: true,
         title: Text(
           config.translate('comingSoon'),
-          style: MyFonts.h4(),
+          style: AppFonts.h4(),
         ),
       ),
       body: Container(
@@ -44,7 +44,7 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
             Padding(
               padding: const EdgeInsets.only(bottom: 40.0),
               child: Image.asset(
-                "assets/logo/logo_about.png",
+                "assets/logo/logo.png",
                 fit: BoxFit.fitWidth,
                 width: 139,
                 height: 110,

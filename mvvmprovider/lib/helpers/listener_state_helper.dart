@@ -1,15 +1,11 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| ListenerStateHelper
 | ----------------------------------------------------------------------     
-|
+| accessing app 
 |
 |
 |
 */
 
-enum ActionType {
-  create,
-  edit,
-  delete,
-}
+enum ListenerStateHelper { Loading, Loaded, Error, Empty }

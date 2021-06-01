@@ -6,6 +6,7 @@
 |   @url              url is part run connect with parth the base url
 |   @default_lang     Langauge configs
 |   @api_timeout      Time api connect and block app
+|
 */
 const env = {
   "base_url": "http://api.mobile.xyz",

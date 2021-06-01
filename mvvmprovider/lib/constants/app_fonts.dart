@@ -1,19 +1,19 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| AppFonts
 | ----------------------------------------------------------------------     
-|  
+| AppFonts is fonts style app size
 |
 |
 |
 */
 
 import 'package:flutter/material.dart';
-import 'colors.dart';
+import 'app_colors.dart';
 
-class MyFonts {
+class AppFonts {
   //  Remove default constructor
-  MyFonts._internal();
+  AppFonts._internal();
 
   /*
   *   H1
@@ -23,7 +23,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 36.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -35,7 +35,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 22.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -54,7 +54,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 18.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -66,7 +66,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 15.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -78,7 +78,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 13.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -90,7 +90,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 10.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -102,7 +102,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 15.0,
       //fontWeight: FontWeight.w500,
-      color: MyColors.grayColor(),
+      color: AppColors.grayColor(),
     );
   }
 
@@ -114,7 +114,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 17.0,
       //fontWeight: FontWeight.w500,
-      color: MyColors.grayColor(),
+      color: AppColors.grayColor(),
     );
   }
 
@@ -126,7 +126,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 15.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.redColor(),
+      color: AppColors.redColor(),
     );
   }
 
@@ -137,7 +137,7 @@ class MyFonts {
   static emailText() {
     return TextStyle(
       fontSize: 14.0,
-      color: MyColors.redColor(),
+      color: AppColors.redColor(),
     );
   }
 
@@ -149,7 +149,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 6.0,
       //fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -181,7 +181,7 @@ class MyFonts {
   *   @return TextStyle
   */
   static dateText() {
-    return TextStyle(fontSize: 13.0, color: MyColors.bgOrange());
+    return TextStyle(fontSize: 13.0, color: AppColors.bgOrange());
   }
 
   /*
@@ -191,7 +191,7 @@ class MyFonts {
   static smallText() {
     return TextStyle(
       fontSize: 13.0,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
       height: 1.5,
     );
   }
@@ -204,7 +204,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -216,7 +216,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 15.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -227,7 +227,7 @@ class MyFonts {
   static largeTextRed() {
     return TextStyle(
       fontSize: 15.0,
-      color: MyColors.bgRed(),
+      color: AppColors.bgRed(),
     );
   }
 
@@ -251,7 +251,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 18.0,
       //fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -263,7 +263,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 20.0,
       //fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -275,7 +275,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 24.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -287,8 +287,8 @@ class MyFonts {
     return TextStyle(
       fontSize: 12.0,
       fontWeight: FontWeight.w500,
-      decorationColor: MyColors.whiteColor(),
-      color: MyColors.whiteColor(),
+      decorationColor: AppColors.whiteColor(),
+      color: AppColors.whiteColor(),
     );
   }
 
@@ -296,18 +296,7 @@ class MyFonts {
     return TextStyle(
       fontSize: 12.0,
       fontWeight: FontWeight.w500,
-      color: MyColors.redColor(),
-    );
-  }
-
-  /*
-  *   smaller Paragraph
-  *   @return TextStyle
-  */
-  static vehicleTextColor() {
-    return TextStyle(
-      fontSize: 12.0,
-      color: MyColors.vehicleColor(),
+      color: AppColors.redColor(),
     );
   }
 }

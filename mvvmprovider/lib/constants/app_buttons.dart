@@ -1,16 +1,16 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+|   Style Design buttom in app
 | ----------------------------------------------------------------------     
-|   @file       = config_wrapper.dart
+|   Developer can create style
 |
 */
 
 import 'package:flutter/material.dart';
 
-class MyButtons {
+class AppButtons {
   //  Remove default constructor
-  //MyButtons._internal();
+  AppButtons._internal();
 
   //button size
   static double sizePrimaryButton = 46.0;

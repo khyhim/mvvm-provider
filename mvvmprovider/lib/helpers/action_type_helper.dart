@@ -1,11 +1,15 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| ActionTypeHalper
 | ----------------------------------------------------------------------     
-|
+| ActionTypeHalper is enumeration case study
 |
 |
 |
 */
 
-enum ListenerState { Loading, Loaded, Error, Empty }
+enum ActionTypeHalper {
+  create,
+  edit,
+  delete,
+}

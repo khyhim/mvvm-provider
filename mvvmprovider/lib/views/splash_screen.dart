@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: <Widget>[
             Center(
               child: Image.asset(
-                "assets/logo/logo_aklasse.png",
+                "assets/logo/logo.png",
                 fit: BoxFit.fitWidth,
                 width: 139,
                 height: 110,
@@ -78,7 +78,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   left: 0,
                   right: 0,
                   child: Image.asset(
-                    "assets/image/bg_aklasse.png",
+                    "assets/image/bg.png",
                     fit: BoxFit.cover,
                     width: MediaQuery.of(context).size.width,
                   ),

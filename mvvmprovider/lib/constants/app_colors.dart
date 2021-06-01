@@ -1,17 +1,17 @@
 /*
 | ---------------------------------------------------------------------- 
-| Add More Action Button / Menu
+| App Color
 | ----------------------------------------------------------------------     
-|
+| App color is style color app
 |
 */
 
 import 'dart:ui';
 import 'package:flutter/material.dart';
 
-class MyColors {
+class AppColors {
   //  Remove default constructor
-  //MyColors._internal();
+  AppColors._internal();
 
   /*
    *  White color
@@ -19,14 +19,6 @@ class MyColors {
    */
   static whiteColor() {
     return Colors.white;
-  }
-
-  /*
-   *  Vehicle color
-   *  @return Color
-   */
-  static vehicleColor() {
-    return Color(0xFF979797);
   }
 
   /*

@@ -1,4 +1,4 @@
-import 'package:mvvmprovider/constants/fonts.dart';
+import 'package:mvvmprovider/constants/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
@@ -29,7 +29,7 @@ class _WebScreenState extends State<WebScreen> {
         centerTitle: true,
         title: new Text(
           "Widget webview",
-          style: MyFonts.h4(),
+          style: AppFonts.h4(),
         ),
       ),
     );
