@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mvvmprovider/config/config.dart';
-import 'package:mvvmprovider/config/config_wrapper.dart';
+import 'package:mvvmprovider/configs/config.dart';
+import 'package:mvvmprovider/configs/config_wrapper.dart';
 import 'package:mvvmprovider/constants/app_fonts.dart';
 
 class ComingSoonScreen extends StatefulWidget {

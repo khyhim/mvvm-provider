@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvmprovider/config/config.dart';
-import 'package:mvvmprovider/config/config_wrapper.dart';
+import 'package:mvvmprovider/configs/config.dart';
+import 'package:mvvmprovider/configs/config_wrapper.dart';
 import 'package:mvvmprovider/constants/constants.dart';
 import 'package:mvvmprovider/helpers/locale_notification.dart';
 

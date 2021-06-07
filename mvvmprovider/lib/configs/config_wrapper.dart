@@ -10,7 +10,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:mvvmprovider/config/config.dart';
+import 'package:mvvmprovider/configs/config.dart';
 
 // ignore: must_be_immutable
 class ConfigWrapper extends StatefulWidget {

@@ -12,7 +12,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mvvmprovider/config/config_wrapper.dart';
+import 'package:mvvmprovider/configs/config_wrapper.dart';
 import 'package:mvvmprovider/helpers/share_preference.dart';
 import 'package:mvvmprovider/helpers/share_preference_key.dart';
 import 'package:mvvmprovider/routes/route.dart';

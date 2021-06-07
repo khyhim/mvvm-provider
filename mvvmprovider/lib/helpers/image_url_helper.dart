@@ -9,7 +9,7 @@
 */
 
 import 'package:flutter/material.dart';
-import 'package:mvvmprovider/config/config_wrapper.dart';
+import 'package:mvvmprovider/configs/config_wrapper.dart';
 
 String url = "";
 
