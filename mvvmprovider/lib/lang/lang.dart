@@ -8,7 +8,7 @@
 |
 */
 
-import 'package:mvvmprovider/localization/en.dart';
-import 'package:mvvmprovider/localization/kh.dart';
+import 'package:mvvmprovider/lang/en.dart';
+import 'package:mvvmprovider/lang/kh.dart';
 
-const locale = {"en": en, "kh": kh};
+const lang = {"en": en, "kh": kh};

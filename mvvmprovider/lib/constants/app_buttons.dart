@@ -9,39 +9,58 @@
 import 'package:flutter/material.dart';
 
 class AppButtons {
-  //  Remove default constructor
-  AppButtons._internal();
+  /*
+  |----------------------
+  |   Remove default constructor
+  |----------------------
+  |   
+  */
 
-  //button size
+  AppButtons._internal();
+  /*
+  |----------------------
+  |   button size
+  |----------------------
+  |   
+  */
+  
   static double sizePrimaryButton = 46.0;
 
   /*
-  *   Rounded Shape
-  *   @return Shape
+  |----------------------
+  |   Rounded Shape
+  |----------------------
+  |   @return Shape
   */
   static roundedShape() {
     return RoundedRectangleBorder(borderRadius: BorderRadius.circular(10));
   }
 
   /*
-  *   Beveled Shape
-  *   @return Shape
+  |------------------------
+  |   Beveled Shape
+  |------------------------
+  |   @return Shape
   */
   static beveledShape() {
     return BeveledRectangleBorder(borderRadius: BorderRadius.circular(10));
   }
 
   /*
-  *   Border Shape
-  *   @return Shape
+  |----------------------------
+  |   Border Shape
+  |----------------------------
+  |   @return Shape
   */
   static borderShape() {
     return Border.all(width: 2.0, color: Colors.redAccent);
   }
 
   /*
-  *   Border Style Shape
-  *   @return Shape
+  |--------------------------
+  |   Border Style Shape
+  |--------------------------
+  |   @return Shape
   */
   static borderStyleShape() {
     return BorderSide(
@@ -49,8 +68,10 @@ class AppButtons {
   }
 
   /*
-  *   Circle Style Shape
-  *   @return Shape
+  |---------------------------------
+  | Circle Style Shape
+  |---------------------------------
+  | @return Shape
   */
   static circleShape() {
     return CircleBorder();

@@ -12,12 +12,12 @@ import 'package:flutter/material.dart';
 import 'package:mvvmprovider/localization/locale.dart';
 
 // ignore: must_be_immutable
-class Config extends InheritedWidget {
+class AppConfig extends InheritedWidget {
   Map<String, String> configuration;
   Map<String, String> translation;
   String language;
 
-  Config(
+  AppConfig(
       {Key key,
       @required Widget child,
       @required this.configuration,
@@ -26,13 +26,13 @@ class Config extends InheritedWidget {
         assert(configuration != null),
         super(child: child, key: key) {
     if (language == null) {
-      language = configuration["locale"];
+      language = configuration["lang"];
     }
     translation = locale[language];
   }
 
   @override
-  bool updateShouldNotify(Config oldWidget) {
+  bool updateShouldNotify(AppConfig oldWidget) {
     // TODO: implement updateShouldNotify
     return this.language != oldWidget.language;
   }

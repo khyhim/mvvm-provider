@@ -12,12 +12,19 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 class AppFonts {
-  //  Remove default constructor
+  /*
+  |--------------------------
+  |   Remove default constructor
+  |--------------------------
+  */
+  
   AppFonts._internal();
 
   /*
-  *   H1
-  *   @return TextStyle
+  |--------------------------
+  |   H1
+  |--------------------------
+  |   @return TextStyle
   */
   static h1() {
     return TextStyle(
@@ -28,8 +35,10 @@ class AppFonts {
   }
 
   /*
-  *   H2
-  *   @return TextStyle
+  |---------------------------
+  |   H2
+  |---------------------------
+  |   @return TextStyle
   */
   static h2() {
     return TextStyle(
@@ -39,16 +48,12 @@ class AppFonts {
     );
   }
 
-  static h2Black() {
-    return TextStyle(
-      fontSize: 22.0,
-      fontWeight: FontWeight.w500,
-    );
-  }
-
+ 
   /*
-  *   H3
-  *   @return TextStyle
+  |------------------------
+  |  H3
+  |------------------------
+  |   @return TextStyle
   */
   static h3() {
     return TextStyle(
@@ -59,8 +64,10 @@ class AppFonts {
   }
 
   /*
-  *   H4
-  *   @return TextStyle
+  |---------------------
+  |   H4
+  |---------------------
+  |   @return TextStyle
   */
   static h4() {
     return TextStyle(
@@ -71,8 +78,10 @@ class AppFonts {
   }
 
   /*
-  *   H5
-  *   @return TextStyle
+  |--------------------------
+  |   H5
+  |-------------------------
+  |   @return TextStyle
   */
   static h5() {
     return TextStyle(
@@ -83,8 +92,10 @@ class AppFonts {
   }
 
   /*
-  *   H5
-  *   @return TextStyle
+  |------------------------------------
+  |   H6
+  |------------------------------------
+  |   @return TextStyle
   */
   static h6() {
     return TextStyle(
@@ -95,8 +106,10 @@ class AppFonts {
   }
 
   /*
-  *   genderText GenderText
-  *   @return TextStyle
+  |-----------------------------
+  |   genderText GenderText
+  |-----------------------------
+  |   @return TextStyle
   */
   static genderText() {
     return TextStyle(
@@ -107,8 +120,10 @@ class AppFonts {
   }
 
   /*
-  *   hintText HintText
-  *   @return TextStyle
+  |-----------------------------
+  |   hintText HintText
+  |-----------------------------
+  |   @return TextStyle
   */
   static hintText() {
     return TextStyle(
@@ -119,8 +134,10 @@ class AppFonts {
   }
 
   /*
-  *   actionText ActionText
-  *   @return TextStyle
+  |--------------------------
+  |   actionText ActionText
+  |--------------------------
+  |   @return TextStyle
   */
   static actionText() {
     return TextStyle(
@@ -131,8 +148,10 @@ class AppFonts {
   }
 
   /*
-  *   email Paragraph
-  *   @return TextStyle
+  |---------------------------
+  |  email Paragraph
+  |---------------------------
+  |  @return TextStyle
   */
   static emailText() {
     return TextStyle(
@@ -142,8 +161,10 @@ class AppFonts {
   }
 
   /*
-  *   smaller Paragraph
-  *   @return TextStyle
+  |----------------------------
+  |   smaller Paragraph
+  |----------------------------
+  |   @return TextStyle
   */
   static smallerText() {
     return TextStyle(
@@ -154,8 +175,10 @@ class AppFonts {
   }
 
   /*
-  *   xxsmall Paragraph
-  *   @return TextStyle
+  |--------------------------
+  |   xxsmall Paragraph
+  |--------------------------
+  |   @return TextStyle
   */
   static xxsmallText() {
     return TextStyle(
@@ -166,8 +189,10 @@ class AppFonts {
   }
 
   /*
-  *   xsmall Paragraph
-  *   @return TextStyle
+  |-----------------------
+  |   xsmall Paragraph
+  |-----------------------
+  |   @return TextStyle
   */
   static xSmallText() {
     return TextStyle(
@@ -177,16 +202,20 @@ class AppFonts {
   }
 
   /*
-  *   xsmall Paragraph
-  *   @return TextStyle
+  |---------------------------------
+  |   xsmall Paragraph
+  |---------------------------------
+  |   @return TextStyle
   */
   static dateText() {
     return TextStyle(fontSize: 13.0, color: AppColors.bgOrange());
   }
 
   /*
-  *   small Paragraph
-  *   @return TextStyle
+  |------------------------
+  |   small Paragraph
+  |------------------------
+  |   @return TextStyle
   */
   static smallText() {
     return TextStyle(
@@ -197,8 +226,10 @@ class AppFonts {
   }
 
   /*
-  *   medium Paragraph
-  *   @return TextStyle
+  |-------------------------------
+  |   medium Paragraph
+  |-------------------------------
+  |   @return TextStyle
   */
   static mediumText() {
     return TextStyle(
@@ -209,8 +240,10 @@ class AppFonts {
   }
 
   /*
-  *   large Paragraph
-  *   @return TextStyle
+  |-----------------------------
+  |   large Paragraph
+  |-----------------------------
+  |   @return TextStyle
   */
   static largeText() {
     return TextStyle(
@@ -221,8 +254,10 @@ class AppFonts {
   }
 
   /*
-  *   large Paragraph
-  *   @return TextStyle
+  |--------------------------
+  |   large Paragraph
+  |--------------------------
+  |   @return TextStyle
   */
   static largeTextRed() {
     return TextStyle(
@@ -232,8 +267,10 @@ class AppFonts {
   }
 
   /*
-  *   large Paragraph
-  *   @return TextStyle
+  |--------------------------
+  |   large Paragraph
+  |--------------------------
+  |   @return TextStyle
   */
   static largeTextGray() {
     return TextStyle(
@@ -244,8 +281,10 @@ class AppFonts {
   }
 
   /*
-  *   xlarge Paragraph
-  *   @return TextStyle
+  |-----------------------------
+  |   xlarge Paragraph
+  |----------------------------
+  |   @return TextStyle
   */
   static xlargeText() {
     return TextStyle(
@@ -256,8 +295,10 @@ class AppFonts {
   }
 
   /*
-  *   xxlarge Paragraph
-  *   @return TextStyle
+  |------------------------------
+  |   xxlarge Paragraph
+  |------------------------------
+  |   @return TextStyle
   */
   static xxlargeText() {
     return TextStyle(
@@ -268,8 +309,10 @@ class AppFonts {
   }
 
   /*
-  *   larger Paragraph
-  *   @return TextStyle
+  |-------------------------
+  |  larger Paragraph
+  |-------------------------
+  |   @return TextStyle
   */
   static largerText() {
     return TextStyle(
@@ -280,8 +323,10 @@ class AppFonts {
   }
 
   /*
-  *   larger Paragraph
-  *   @return TextStyle
+  |------------------------
+  |   larger Paragraph
+  |------------------------
+  |   @return TextStyle
   */
   static fieldText() {
     return TextStyle(
@@ -292,11 +337,4 @@ class AppFonts {
     );
   }
 
-  static starValidation() {
-    return TextStyle(
-      fontSize: 12.0,
-      fontWeight: FontWeight.w500,
-      color: AppColors.redColor(),
-    );
-  }
 }

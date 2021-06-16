@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:mvvmprovider/configs/config.dart';
 
 // ignore: must_be_immutable
-class ConfigWrapper extends StatefulWidget {
+class AppConfigWrapper extends StatefulWidget {
   final Widget child;
   final Map<String, String> configuration;
   static Dio _dio;
@@ -21,7 +21,7 @@ class ConfigWrapper extends StatefulWidget {
 
   static Dio get dio => _dio;
 
-  ConfigWrapper({Key key, this.configuration, this.child, this.language})
+  AppConfigWrapper({Key key, this.configuration, this.child, this.language})
       : super(key: key) {
     _dio = Dio();
     _dio.options.baseUrl = configuration["base_url"];
@@ -29,31 +29,31 @@ class ConfigWrapper extends StatefulWidget {
   }
 
   @override
-  _ConfigWrapperState createState() => _ConfigWrapperState(
+  _AppConfigWrapperState createState() => _AppConfigWrapperState(
       child: child,
       configuration: configuration,
       language: language == "" ? configuration['default_lang'] : language);
 
-  static Config of(BuildContext context) {
+  static AppConfig of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<Config>();
   }
 
   static changeLanguage(BuildContext context, String language) {
-    (context.findAncestorStateOfType<_ConfigWrapperState>())
+    (context.findAncestorStateOfType<_AppConfigWrapperState>())
         .changeLanguage(language);
   }
 }
 
-class _ConfigWrapperState extends State<ConfigWrapper> {
+class _AppConfigWrapperState extends State<AppConfigWrapper> {
   Widget child;
   Map<String, String> configuration;
   String language;
 
-  _ConfigWrapperState({this.child, this.configuration, this.language});
+  _AppConfigWrapperState({this.child, this.configuration, this.language});
 
   @override
   Widget build(BuildContext context) {
-    return Config(
+    return AppConfig(
       child: child,
       configuration: configuration,
       language: language,

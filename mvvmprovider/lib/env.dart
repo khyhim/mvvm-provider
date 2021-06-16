@@ -8,9 +8,34 @@
 |   @api_timeout      Time api connect and block app
 |
 */
+
+
+/*
+|----------------------------------------------------------
+|  url connection for production
+|----------------------------------------------------------
+*/
+static String url = "http://api.mobilepro.xyz";
+
+
+/*
+|----------------------------------------------------------
+|  url connection for development
+|----------------------------------------------------------
+*/
+// static String url = "http://api.mobiledev.xyz";
+
+
+/*
+|----------------------------------------------------------
+|  url connection for QA tesing
+|----------------------------------------------------------
+*/
+// static String url = "http://api.mobileaqaxyz";
+
 const env = {
-  "base_url": "http://api.mobile.xyz",
-  "url": "http://api.mobile.xyz",
+  "base_url": url,
+  "url": url,
   "default_lang": "en",
   "api_timeout": "30000"
 };
