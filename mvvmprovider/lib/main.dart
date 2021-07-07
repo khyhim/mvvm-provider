@@ -12,6 +12,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:mvvmprovider/config/app_config_wrapper.dart';
 import 'package:mvvmprovider/configs/config_wrapper.dart';
 import 'package:mvvmprovider/helpers/share_preference.dart';
 import 'package:mvvmprovider/helpers/share_preference_key.dart';
@@ -28,7 +29,7 @@ void main() async {
   var language = await AppSharePreference.instance
       .getString(SharePreferenceKey.kLanguage); //get from share preference
   runApp(MultiProvider(
-    child: ConfigWrapper(
+    child: AppConfigWrapper(
       child: MyApp(navigatorKey: navigatorKey),
       /*
       |----------------------------------------------

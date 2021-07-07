@@ -9,7 +9,7 @@
 */
 
 import 'package:flutter/material.dart';
-import 'package:mvvmprovider/localization/locale.dart';
+import 'package:mvvmprovider/lang/lang.dart';
 
 // ignore: must_be_immutable
 class AppConfig extends InheritedWidget {
@@ -28,7 +28,7 @@ class AppConfig extends InheritedWidget {
     if (language == null) {
       language = configuration["lang"];
     }
-    translation = locale[language];
+    translation = lang[language];
   }
 
   @override

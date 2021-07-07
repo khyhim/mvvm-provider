@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:mvvmprovider/config/app_config.dart';
 import 'package:mvvmprovider/configs/config.dart';
 import 'package:mvvmprovider/configs/config_wrapper.dart';
 import 'package:mvvmprovider/constants/constants.dart';
@@ -28,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Config config = ConfigWrapper.of(context);
+    AppConfig appConfig = AppConfigWrapper.of(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF2F2F2F),

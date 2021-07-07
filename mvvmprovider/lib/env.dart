@@ -15,7 +15,7 @@
 |  url connection for production
 |----------------------------------------------------------
 */
-static String url = "http://api.mobilepro.xyz";
+const String url = "http://api.mobilepro.xyz";
 
 
 /*
@@ -23,7 +23,7 @@ static String url = "http://api.mobilepro.xyz";
 |  url connection for development
 |----------------------------------------------------------
 */
-// static String url = "http://api.mobiledev.xyz";
+// const String url = "http://api.mobiledev.xyz";
 
 
 /*
@@ -31,7 +31,7 @@ static String url = "http://api.mobilepro.xyz";
 |  url connection for QA tesing
 |----------------------------------------------------------
 */
-// static String url = "http://api.mobileaqaxyz";
+// const String url = "http://api.mobileaqaxyz";
 
 const env = {
   "base_url": url,

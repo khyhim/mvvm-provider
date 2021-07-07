@@ -10,6 +10,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:mvvmprovider/config/app_config.dart';
 import 'package:mvvmprovider/configs/config.dart';
 
 // ignore: must_be_immutable
@@ -35,7 +36,7 @@ class AppConfigWrapper extends StatefulWidget {
       language: language == "" ? configuration['default_lang'] : language);
 
   static AppConfig of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<Config>();
+    return context.dependOnInheritedWidgetOfExactType<AppConfig>();
   }
 
   static changeLanguage(BuildContext context, String language) {

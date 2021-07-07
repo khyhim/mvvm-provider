@@ -11,7 +11,7 @@ class ComingSoonScreen extends StatefulWidget {
 class _ComingSoonScreenState extends State<ComingSoonScreen> {
   @override
   Widget build(BuildContext context) {
-    Config config = ConfigWrapper.of(context);
+    AppConfig appConfig = AppConfigWrapper.of(context);
     return Scaffold(
       appBar: AppBar(
         elevation: 1,
@@ -29,7 +29,7 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
         ),
         centerTitle: true,
         title: Text(
-          config.translate('comingSoon'),
+          appConfig.translate('comingSoon'),
           style: AppFonts.h4(),
         ),
       ),
